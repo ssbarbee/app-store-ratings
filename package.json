@@ -1,0 +1,36 @@
+{
+  "name": "app-store-ratings",
+  "version": "1.0.0",
+  "description": "Fetches data for app store ratings",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare" : "yarn build",
+    "prepublishOnly" : "yarn test && yarn lint",
+    "preversion" : "yarn lint",
+    "version" : "yarn format && git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssbarbee/app-store-ratings.git"
+  },
+  "keywords": ["AppStore", "app-store", "ratings", "ios-ratings"],
+  "author": "C-J",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssbarbee/app-store-ratings/issues"
+  },
+  "homepage": "https://github.com/ssbarbee/app-store-ratings#readme",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.3"
+  },
+  "files": ["lib/**/*"]
+}
