@@ -9,17 +9,22 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare" : "yarn build",
-    "prepublishOnly" : "yarn test && yarn lint",
-    "preversion" : "yarn lint",
-    "version" : "yarn format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test && yarn lint",
+    "preversion": "yarn lint",
+    "version": "yarn format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ssbarbee/app-store-ratings.git"
   },
-  "keywords": ["AppStore", "app-store", "ratings", "ios-ratings"],
+  "keywords": [
+    "AppStore",
+    "app-store",
+    "ratings",
+    "ios-ratings"
+  ],
   "author": "C-J",
   "license": "ISC",
   "bugs": {
@@ -27,10 +32,18 @@
   },
   "homepage": "https://github.com/ssbarbee/app-store-ratings#readme",
   "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/xml2js": "^0.4.5",
     "prettier": "^1.19.1",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.7.3"
   },
-  "files": ["lib/**/*"]
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "axios": "^0.19.0",
+    "xml2js": "^0.4.22"
+  }
 }
