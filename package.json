@@ -1,11 +1,11 @@
 {
   "name": "app-store-ratings",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Fetches data for app store ratings",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf lib && tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "test": "echo \"Error: no test specified\"",
