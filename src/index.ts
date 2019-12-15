@@ -1,31 +1,31 @@
 import axios from "axios";
 
-var parseStringPromise = require("xml2js").parseStringPromise;
+import { parseStringPromise } from "xml2js";
 import AppStoreFeed = namespace.AppStoreFeed;
 import Entry = namespace.Entry;
 
-type ProjectConfig = {
+interface IProjectConfig {
   projectId: string;
   country?: string;
 }
-type FetchRatingsFilter = {
+interface IFetchRatingsFilter {
   fromDate?: Date;
 }
 const isEmptyString = (str?: string): boolean => !str || str.length === 0;
-const constructUrl = (config: ProjectConfig): string => {
+const constructUrl = (config: IProjectConfig): string => {
   if (config.country) {
     return `https://itunes.apple.com/${config.country}/rss/customerreviews/id=${config.projectId}/sortBy=mostRecent/xml`;
   }
   return `https://itunes.apple.com/rss/customerreviews/id=${config.projectId}/sortBy=mostRecent/xml`;
 };
-const filterEntries = (entries: Entry[], filter?: FetchRatingsFilter): Entry[] => {
+const filterEntries = (entries: Entry[], filter?: IFetchRatingsFilter): Entry[] => {
   if (!filter) {
     return entries;
   }
   return entries.filter(e => e.updated);
 };
 
-export const fetchRatings = async (projectConfig: ProjectConfig, filter?: FetchRatingsFilter): Promise<Entry[]> => {
+export const fetchRatings = async (projectConfig: IProjectConfig, filter?: IFetchRatingsFilter): Promise<Entry[]> => {
   if (isEmptyString(projectConfig.projectId)) {
     throw new Error("projectId must be a non empty string");
   }
