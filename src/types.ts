@@ -27,12 +27,12 @@ export interface IAppStoreRating {
   author: {
     name: string;
     uri: string;
-  }
+  };
 }
 
 export interface IAppStoreFeed {
   feed: {
-    entry: IEntry[]
+    entry: IEntry[];
   };
 }
 
