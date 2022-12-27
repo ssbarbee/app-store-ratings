@@ -2,10 +2,15 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "strict": true,
     "declaration": true,
-    "outDir": "./lib",
-    "strict": true
+    "rootDir": "src",
+    "outDir": "./dist",
   },
   "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*"]
+  "exclude": ["node_modules"]
 }
