@@ -1,16 +1,16 @@
-# app-store-ratings
-Ever had the need to fetch ratings for your IOS App using node? Tired of deducing the types returned by the AppStore API? Then ```app-store-ratings``` is what you're looking for!
+# app-store-ratings 🌟
+Ever had the need to fetch ratings for your IOS App using node? Tired of deducing the types returned by the App Store API? Then ```app-store-ratings``` is what you're looking for!
 
-# Description
+# Description 📚
 Simple wrapper that let you fetch ratings for your IOS APP. Written in `Typescript`.
 
-# Why
+# Why? 🧐
 
 There is no well documented API that returns JSON objects for the IOS App ratings. There is an endpoint that returns XML or JSON. 
 The API that returns XML contains more data than the one that returns JSON. Converting from XML to JSON on several
 projects got a bit tedious. And voilà the package was born.
 
-# Installation
+# Installation 📦
 
 ## npm
 
@@ -20,7 +20,7 @@ projects got a bit tedious. And voilà the package was born.
 
 ```yarn add app-store-ratings```
 
-# Usage
+# Usage 🚀
 No extensive tutorials required. Learn by example.
 
 # Examples
