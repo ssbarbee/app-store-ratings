@@ -1,5 +1,5 @@
-import { expect } from "chai";
-import { fetchRatings } from "../index";
+import { expect } from 'chai';
+import { fetchRatings } from '../index';
 
 describe('app-store-ratings', function () {
   it('should throw error when no project specified', async () => {
