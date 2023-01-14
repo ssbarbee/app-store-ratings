@@ -1,3 +1,5 @@
+## [3.0.6](https://github.com/ssbarbee/app-store-ratings/compare/v3.0.5...v3.0.6) (2023-01-14)
+
 ## [3.0.5](https://github.com/ssbarbee/app-store-ratings/compare/v3.0.4...v3.0.5) (2023-01-14)
 
 ## [3.0.4](https://github.com/ssbarbee/app-store-ratings/compare/v3.0.3...v3.0.4) (2022-12-27)
