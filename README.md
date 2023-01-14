@@ -1,6 +1,6 @@
 | Statements                  | Branches                | Functions                 | Lines             |
 | --------------------------- | ----------------------- | ------------------------- | ----------------- |
-| ![Statements](https://img.shields.io/badge/statements-45.83%25-red.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-20%25-red.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-60%25-red.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-44.44%25-red.svg?style=flat) |
+| ![Statements](https://img.shields.io/badge/statements-96%25-brightgreen.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-81.25%25-yellow.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-94.73%25-brightgreen.svg?style=flat) |
 
 # app-store-ratings 🌟
 Ever had the need to fetch ratings for your IOS App using node? Tired of deducing the types returned by the App Store API? Then ```app-store-ratings``` is what you're looking for!
