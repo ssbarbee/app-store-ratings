@@ -48,14 +48,19 @@ export const fetchRatings = async (projectConfig: IProjectConfig): Promise<IAppS
     throw new Error('projectId must be a non empty string');
   }
   const ratingsUrl = constructUrl(projectConfig);
-  const response = await axios.get(ratingsUrl);
+
   try {
+    const response = await axios.get<string>(ratingsUrl);
     const json: IAppStoreFeed = await parseStringPromise(response.data);
     if (!json.feed || !json.feed.entry) {
       return [];
     }
     return json.feed.entry.map(mapEntries);
   } catch (err) {
-    throw err;
+    console.error(
+      '[app-store-ratings]: Error occurred while fetching/parsing the App store ratings response. More details: ' +
+        (err as Error)?.message || 'Unknown',
+    );
+    return [];
   }
 };
