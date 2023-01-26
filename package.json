@@ -1,6 +1,6 @@
 {
   "name": "app-store-ratings",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "Fetches data for app store ratings",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
