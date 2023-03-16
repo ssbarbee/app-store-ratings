@@ -2,8 +2,8 @@
   "name": "app-store-ratings",
   "version": "3.0.8",
   "description": "Fetches data for app store ratings",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "rm -rf dist && tsc --project tsconfig.build.json && cp package.json dist/package.json && cp README.md dist/README.md && cp CHANGELOG.md dist/CHANGELOG.md && cp LICENSE dist/LICENSE",
     "format": "prettier --write \"src/**/*.ts\"",
