@@ -1,3 +1,10 @@
+## [3.0.9](https://github.com/ssbarbee/app-store-ratings/compare/v3.0.8...v3.0.9) (2023-03-16)
+
+
+### Bug Fixes
+
+* improve main/types ([e4ce28a](https://github.com/ssbarbee/app-store-ratings/commit/e4ce28a0fa4dd8a6c745823ae603e0bdcda11921))
+
 ## [3.0.8](https://github.com/ssbarbee/app-store-ratings/compare/v3.0.7...v3.0.8) (2023-01-26)
 
 ## [3.0.7](https://github.com/ssbarbee/app-store-ratings/compare/v3.0.6...v3.0.7) (2023-01-26)
