@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/ssbarbee/app-store-ratings/compare/v3.0.9...v3.1.0) (2023-11-01)
+
+
+### Features
+
+* improve whats included in the package publish ([48d5c8e](https://github.com/ssbarbee/app-store-ratings/commit/48d5c8e0cb4188de198563210183d860b1c266f3))
+
 ## [3.0.9](https://github.com/ssbarbee/app-store-ratings/compare/v3.0.8...v3.0.9) (2023-03-16)
 
 
